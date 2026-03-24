@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contador</title>
+  <script src="app.js" defer></script>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -20,7 +21,7 @@
       <input type="number" placeholder="Ex: 5"/>
     </div>
 
-    <button>Gerar</button>
+    <button onclick="handleCLick()">Gerar</button>
 
     <div class="resultado">
       <p class="resultado-titulo">Resultado</p>
@@ -35,7 +36,7 @@
               <th>Potências de 2</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tabela">
             <tr>
               <td>1</td>
               <td>2</td>
